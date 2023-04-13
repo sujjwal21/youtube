@@ -33,6 +33,8 @@ const VideoDetail = () => {
               className="react-player"
               controls={true}
               playing={true}
+              // pip={true}
+              loop={true}
             />
             <Typography color="#fff" variant="h5" fontWeight="bold" p="2">
               {title}

@@ -8,7 +8,7 @@ const Sidebar = ({selectedCategory,setSelectedCategory}) => (
     direction="row"
     sx={{
       overflow: "auto",
-      height: { sx: "auto", md: "90%" },
+      height: { sx: "auto", md: "95%" },
       flexDirection: { md: "column" },
     }}
   >
