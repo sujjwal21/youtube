@@ -44,6 +44,11 @@ const ChannelCard = ({ channelDetail,marginTop }) => (
           {channelDetail?.snippet?.title}
           <CheckCircle sx={{ fontSize: 14, color: "gray", ml: "5px" }} />
         </Typography>
+        {channelDetail?.statistics?.subscriberCount && (
+          <Typography sx={{ fontSize: '15px', fontWeight: 500, color: 'gray' }}>
+            {parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString()} Subscribers
+          </Typography>
+        )}
       </CardContent>
     </Link>
   </Box>

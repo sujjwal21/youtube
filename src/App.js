@@ -1,6 +1,6 @@
 import{BrowserRouter,Route,Routes} from "react-router-dom";
 import {Box} from "@mui/material"
-import { ChannelDetail, Feed, Navbar, SearchFeed, VideoDetail } from "./components"
+import { ChannelDetail,ErrorPage, Feed, Navbar, SearchFeed, VideoDetail } from "./components"
 
 const App=()=>(
   <BrowserRouter>
@@ -11,6 +11,7 @@ const App=()=>(
       <Route path='/video/:id' element={<VideoDetail/>} />
       <Route path='/channel/:id' element={<ChannelDetail/>} />
       <Route path='/search/:searchTerm' element={<SearchFeed/>} />
+      <Route path='*' element={<ErrorPage/>} />
     </Routes>
   </Box>
   </BrowserRouter>
